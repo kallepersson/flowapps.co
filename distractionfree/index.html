@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Distraction Free Mode for Google Docs - Chrome Extension</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<img class="logo" src="img/logo.png">
+		<p class="tagline">Distraction Free Mode for <strong>Google Docs</strong></p>
+
+		<div class="download-section download-chrome">
+			<a href="https://chrome.google.com/webstore/detail/distraction-free-mode-for/blmejkgbnceohgjfnoiegdlbfkmpkeha" class="download-button">Download for Chrome</a>
+			<p>Also available for
+				<a href="https://addons.mozilla.org/en-US/developers/addon/distraction-free-google-docs">Firefox</a> and
+				<a href="https://safari-extensions.apple.com/details/?id=com.kallepersson.distractionfree">Safari</a>
+			</p>
+		</div>
+
+		<div class="download-section download-safari">
+			<a href="https://safari-extensions.apple.com/details/?id=com.kallepersson.distractionfree" class="download-button">Download for Safari</a>
+			<p>Also available for
+				<a href="https://chrome.google.com/webstore/detail/distraction-free-mode-for/blmejkgbnceohgjfnoiegdlbfkmpkeha">Safari</a> and
+				<a href="https://addons.mozilla.org/en-US/developers/addon/distraction-free-google-docs">Firefox</a>
+			</p>
+		</div>
+
+		<div class="download-section download-firefox">
+			<a href="https://addons.mozilla.org/en-US/developers/addon/distraction-free-google-docs" class="download-button">Download for Firefox</a>
+			<p>Also available for
+				<a href="https://chrome.google.com/webstore/detail/distraction-free-mode-for/blmejkgbnceohgjfnoiegdlbfkmpkeha">Chrome</a> and
+				<a href="https://safari-extensions.apple.com/details/?id=com.kallepersson.distractionfree">Safari</a>
+			</p>
+		</div>
+
+
+		<video src="app.mov" loop autoplay="true"></video>
+	</header>
+
+
+	<div id="features">
+		<div class="feature">
+			<h2>Focus on the writing</h2>
+			<p>Hides all controls and buttons and lets you focus on the writing. Want more focus? Going full screen is also just a click away.</p>
+			<img src="img/feature.png">
+		</div>
+		<div class="feature">
+			<h2>Themes for every situation</h2>
+			<img src="img/feature.png">
+			<p>Pick the style that suits you, whether it's the dark mode suitable for late night prose, sepia for caffeine-fueled poems, or the clean default theme.</p>
+		</div>
+		<div class="feature">
+			<h2>Built for keys</h2>
+			<img src="img/feature.png">
+			<p>Combine this extension with Google Docs <a href="https://support.google.com/docs/answer/179738?co=GENIE.Platform%3DDesktop&hl=en">keyboard shortcuts</a> for increased productivity, you'll never have to switch back again.</p>
+		</div>
+	</article>
+
+	<p class="download-notes center">
+		Created by <a href="http://kallepersson.se">Kalle Persson</a>. Source code hosted at
+		<a href="https://github.com/kallepersson/DistractionFree">GitHub</a>.
+	</p>
+
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-29206053-1', 'kallepersson.se');
+		ga('send', 'pageview');
+	</script>
+
+	<script type="text/javascript">
+		["Chrome", "Safari", "Firefox"].forEach(function(item) {
+			if (navigator.userAgent.indexOf(item) != -1) {
+				if (item == "Safari" && document.body.classList.contains("chrome")) {
+					return;
+				}
+
+				document.body.classList.add(item.toLowerCase());
+			}
+		})
+	</script>
+
+</body>
+</html>
