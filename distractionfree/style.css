@@ -58,11 +58,10 @@ p.tagline {
 	font-size: 18px;
 }
 
-
 .download-section {
 	display: none;
 	width: 75%;
-	margin: 0 auto 25px auto;
+	margin: 0 auto 35px auto;
 	text-align: center;
 }
 
@@ -70,12 +69,11 @@ p.tagline {
 	font-size: 11px;
 }
 
-
 a.download-button {
 	box-sizing: border-box;
 	text-align: center;
 	width: 325px;
-	margin: 25px auto 10px auto;
+	margin: 10px auto;
 	padding: 14px 30px;
 	text-transform: uppercase;
 	letter-spacing: -0.3px;
@@ -217,15 +215,26 @@ td code {
 	header,
 	#features {
 		width: 90%;
+	    transition: width 0.3s;
 	}
 
-	.download-section,
-	a.download-button {
+	.download-section {
 		width: auto;
+		transition: width 0.3s;
 	}
 
 	.feature {
 		float: none;
 		width: auto;
+		transition: width 0.3s;
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 380px) {
+	.download-section,
+	a.download-button {
+		width: auto;
+		transition: width 0.3s;
 	}
 }
