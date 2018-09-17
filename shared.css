@@ -1,0 +1,67 @@
+.promo {
+	position: absolute;
+	top: 10px;
+	display: block;
+	transition: all 0.15s ease-in;
+	background: rgba(255,255,255,0);
+	padding: 15px;
+	border-radius: 5px;
+	font-size: 12px;
+	color: rgba(0,0,0,0.8);;
+	opacity: 0.9;
+}
+
+.promo.left {
+	left: 10px;
+}
+
+.promo.right {
+	right: 10px;
+}
+
+.promo img {
+	display: block;	
+	width: 32px;
+	margin: 0 auto;
+}
+
+.promo span {
+	display: block;
+}
+
+.promo:hover {
+	text-decoration: none;
+	background: rgba(255,255,255,0.7);
+	color: #000;
+	opacity: 1;
+}
+
+.promo span {
+	display: block;
+	margin: 5px 0 0 0;
+	text-align: center;
+}
+
+.promo strong {
+	display: block;
+}
+
+@media (max-width: 680px) {
+	.promo {
+		font-size: 9px;
+		padding: 10px;
+		top: 5px;
+	}
+
+	.promo.left {
+		left: 5px;
+	}
+
+	.promo.right {
+		right: 5px;
+	}
+
+	.promo img {
+		width: 20px;
+	}
+}
