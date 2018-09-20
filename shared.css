@@ -50,6 +50,7 @@ h1 {
 img.logo {
 	margin: 10px auto;
 	display: block;
+	width: 48px;
 }
 
 p.tagline {
