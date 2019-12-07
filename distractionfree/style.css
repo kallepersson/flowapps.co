@@ -3,7 +3,6 @@
 }
 
 .chrome .download-section.download-chrome,
-.safari .download-section.download-safari,
 .firefox .download-section.download-firefox {
 	display: block;
 }
